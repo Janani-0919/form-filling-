@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice-Assisted Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Voice-Assisted Form</h1>
+        <form id="voiceForm">
+            <label for="your-name">Your Name</label>
+            <input type="text" id="your-name" name="your-name" placeholder="Enter your name" required>
+            <button type="button" class="voice-button" onclick="startVoiceInput('your-name')">🎤 Speak</button>
+
+            <label for="father-name">Father's Name</label>
+            <input type="text" id="father-name" name="father-name" placeholder="Enter father's name" required>
+            <button type="button" class="voice-button" onclick="startVoiceInput('father-name')">🎤 Speak</button>
+
+            <label for="mother-name">Mother's Name</label>
+            <input type="text" id="mother-name" name="mother-name" placeholder="Enter mother's name" required>
+            <button type="button" class="voice-button" onclick="startVoiceInput('mother-name')">🎤 Speak</button>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address" placeholder="Enter your address" rows="4" required></textarea>
+            <button type="button" class="voice-button" onclick="startVoiceInput('address')">🎤 Speak</button>
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" placeholder="Enter your city" required>
+            <button type="button" class="voice-button" onclick="startVoiceInput('city')">🎤 Speak</button>
+
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+                <option value="">Select your country</option>
+                <option value="India">India</option>
+                <option value="United States">United States</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Australia">Australia</option>
+                <option value="Canada">Canada</option>
+            </select>
+            <button type="button" class="voice-button" onclick="startVoiceInput('country')">🎤 Speak</button>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
