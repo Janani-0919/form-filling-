@@ -1,0 +1,84 @@
+/* General Body Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient Background */
+}
+
+/* Form Container Styles */
+.form-container {
+    background-color: #ffffff; /* White Form Background */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    text-align: center;
+    color: #4a4a4a; /* Neutral Heading Color */
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    font-size: 28px;
+}
+
+label {
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+    display: block;
+    font-size: 16px;
+}
+
+input, textarea, select {
+    margin-top: 8px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light Input Background */
+    color: #333;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #ff7e5f;
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 126, 95, 0.3);
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    background-color: #ff7e5f; /* Button Background Color */
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e76850;
+    transform: scale(1.05); /* Button Hover Animation */
+}
+
+.voice-button {
+    background-color: #48c78e; /* Green Voice Button */
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.voice-button:hover {
+    background-color: #3aa572;
+    transform: scale(1.05); /* Voice Button Hover Animation */
+}
